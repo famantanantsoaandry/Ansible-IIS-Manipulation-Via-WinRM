@@ -13,8 +13,14 @@ This simple example was executed via Oracle Virtualbox for the controller and so
 
 
 On the Ansible controller :
-
+- test the connection : 
+ansible windows -i inventory -m win_ping -vvv
+- run the playbook :
 ansible-playbook set_to_maintenance.yml -i inventory
+
+# Common issues : 
+TO DO
+
 
 
 
