@@ -1,0 +1,6 @@
+ansible_user: afama
+ansible_password: Akohodimapolo50!
+ansible_connection: winrm
+ansible_winrm_transport: basic
+ansible_winrm_port: 5985
+ansinble_winrm_scheme: http

@@ -1,0 +1,17 @@
+---
+-
+  hosts: windows
+  name: "IIS Port Manipulation"
+  tasks:
+    -
+      name: "Add port binding"
+      win_iis_webbinding:
+        name: "Default Web Site"
+        port: 80
+        state: present
+    -
+       name: "Remove port binding"
+       win_iis_webbinding:
+         name: "Default Web Site"
+         port: 8090
+         state: absent
